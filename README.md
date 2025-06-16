@@ -59,6 +59,11 @@ curl http://localhost:5050/data
 ## ☁️ **Deployment to AWS**
 
 > You must have **AWS CLI + Terraform installed** and an AWS account.
+> ECS deployment pulls your app image from docker hub.
+> Before deploying, make sure you are logged into Docker Hub — the ECS task will pull the image from there.
+
+### **login to docker hub**
+docker login
 
 ### **1. Set AWS Credentials**
 
